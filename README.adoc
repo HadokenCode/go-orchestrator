@@ -1,0 +1,6 @@
+= Release Orchestrator
+
+[source, shell]
+--
+$ go run main.go -c show-catalog
+--

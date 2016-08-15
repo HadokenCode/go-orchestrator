@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/mitchellh/colorstring"
-	"github.com/spf13/viper"
+	//"github.com/spf13/viper"
 
-	ermclient "releases-manager/orchestrator/client"
-	ermcmd "releases-manager/orchestrator/cmd"
-	ermconf "releases-manager/orchestrator/configuration"
-	ermtypes "releases-manager/orchestrator/types"
+	ermclient "go-orchestrator/client"
+	ermcmd "go-orchestrator/cmd"
+	ermconf "go-orchestrator/configuration"
+	ermtypes "go-orchestrator/types"
 )
 
 const (
@@ -88,7 +88,7 @@ func checkPrerequisites() {
 
 	// Load the Catalog
 	var err error
-	catalog, err = ermtypes.GetCatalog(viper.GetString(ermclient.CATALOG_BASE_URL) + "/" + defaultID + ".json")
+	catalog, err = ermtypes.GetCatalog("https://raw.githubusercontent.com/exoplatform/swf-release-manager-catalog/master/samples/" + defaultID + ".json")
 	if err != nil {
 		ermcmd.PrintError("Error while donwloading the catalog.", err)
 	}

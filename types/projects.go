@@ -7,7 +7,7 @@ import (
 
 	"github.com/mitchellh/colorstring"
 
-	ermcmd "releases-manager/orchestrator/cmd"
+	ermcmd "go-orchestrator/cmd"
 	"strings"
 )
 

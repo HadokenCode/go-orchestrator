@@ -6,13 +6,13 @@ import (
 
 	"github.com/spf13/viper"
 
-	ermcmd "releases-manager/orchestrator/cmd"
+	ermcmd "go-orchestrator/cmd"
 )
 
 const (
-	APP_CONFIG_FILE      string = "erm-config"
+	APP_CONFIG_FILE      string = "exo-release"
 	APP_CONFIG_FILE_TYPE string = "properties"
-	APP_CONFIG_FILE_PATH string = "/.eXo/Releases"
+	APP_CONFIG_FILE_PATH string = "/.eXo/Release"
 )
 
 // LoadConfigFile load the needed configuration file

@@ -26,7 +26,7 @@ import (
 
 	"github.com/samalba/dockerclient"
 
-	ermtypes "releases-manager/orchestrator/types"
+	ermtypes "go-orchestrator/types"
 )
 
 const (
